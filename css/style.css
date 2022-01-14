@@ -7,13 +7,45 @@
 .image{
     width: 500px;
     height: 300px;
-    border: 1px solid #000;
-    margin: 10px 0;
+    
+    margin: 0 auto ;
+    margin-top:30px;
+    position: relative;
 }
-
 
 .image > img{
     width: 100%;
     height: 100%;
     object-fit: fill;
+}
+
+.prev,
+.next{
+    position: absolute;
+    display: inline-block;
+    top: 45%;
+    color: rgba(0, 0, 0, 1.0);
+    font-size: 30px;
+}
+
+.prev{
+    left: 10px;
+}
+
+.next{
+    right: 10px;
+}
+
+.bubble{
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    margin:0 7px;
+}
+
+.priority{
+    background-color: black;
 }
