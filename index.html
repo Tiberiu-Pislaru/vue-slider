@@ -27,7 +27,7 @@
 
                 </div>
                 <div class="bubbles">
-                    <div class="bubble"  v-for="image in images" :class="[image.highPriority ? 'priority':'']"></div>
+                    <div class="bubble"  v-for="(image,i) in images" :class="[i===indice ? 'priority':'']"></div>
                 </div>
 
             </div>
